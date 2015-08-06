@@ -2,9 +2,6 @@
   "name":"lmt-information",
   "scripts":{},
   "env":{
-    "BUILDPACK_URL":{
-      "required":true
-    },
     "FEEDBACK_EMAIL":{
       "required":true
     },
