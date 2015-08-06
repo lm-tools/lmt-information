@@ -5,7 +5,6 @@ before do
 end
 
 set :protection, false
-set :public_dir, Proc.new { File.join(root, "_site") }
 
 post '/send_email' do
   res = Pony.mail(
