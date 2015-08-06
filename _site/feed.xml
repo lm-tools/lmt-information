@@ -7,6 +7,7 @@
     <link>http://lmt-information.herokuapp.com/</link>
     <atom:link href="http://lmt-information.herokuapp.com/feed.xml" rel="self" type="application/rss+xml"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <pubDate>Tue, 04 Aug 2015 11:10:41 +0100</pubDate>
     <lastBuildDate>Tue, 04 Aug 2015 11:10:41 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
@@ -29,6 +30,10 @@
 =======
     <pubDate>Thu, 06 Aug 2015 12:03:58 +0100</pubDate>
     <lastBuildDate>Thu, 06 Aug 2015 12:03:58 +0100</lastBuildDate>
+=======
+    <pubDate>Thu, 06 Aug 2015 12:09:49 +0100</pubDate>
+    <lastBuildDate>Thu, 06 Aug 2015 12:09:49 +0100</lastBuildDate>
+>>>>>>> Remove about page
     <generator>Jekyll v2.5.3</generator>
     
 >>>>>>> Redirect root url to index
