@@ -32,6 +32,10 @@ end
 
 set :public_folder, '_site'
 
+<<<<<<< HEAD
 get "/*" do
+=======
+get "/" do
+>>>>>>> Redirect root url to index
   redirect '/index.html'
 end
