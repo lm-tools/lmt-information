@@ -2,72 +2,107 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1>Labour Market tools</h1>
-
-  <h2>Situational</h2>
-
-  <a href="http://lmt-situational.herokuapp.com/">Go to the tool</a>
-
-  <div>
-  <p>Given a postcode, explore:</p>
-    <ul>
-      <li>travel times map</li>
-      <li>top job categories</li>
-      <li>top employers</li>
-      <li>latest jobs</li>
-    </ul>
+<div class="row">
+  <div class="large-12 columns">
+    <h1>Labour Market tools <small>information page</small></h1>
+    <hr/>
   </div>
-
-  <h2>Job roles report</h2>
-
-  <a href="http://lmt-situational.herokuapp.com/sectors/">Go to the tool</a>
-
-  <div>
-    <p>Based on a postcode and keywords of your choice, get information about job roles you are looking for, including:</p>
-    <ul>
-      <li>pay bands</li>
-      <li>average working hours</li>
-      <li>qualifications required</li>
-      <li>related search terms</li>
-    </ul>
-  </div>
-
-  <h1>Feedback</h1>
-
-  <form id="contact-form" action="/send_email" class="contact-form" method="post" data-success="Message successfully sent!">
-
-    <label for="name">Name</label>
-    <input id="name" type="text" name="name" class="field" required autofocus /><br/>
-
-    <label for="email">E-mail</label>
-    <input id="email" type="email" name="email" class="field" required /><br/>
-
-    <label for="subject">Subject</label>
-    <input id="subject" type="text" name="subject" class="field" required /><br/>
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" required ></textarea><br/>
-
-    <button type="submit">Send</button>
-  </form>
-
-<!--
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
--->
 </div>
+
+
+<div class="row">
+
+
+  <div class="large-9 columns" role="content">
+
+    <article>
+
+      <h3><a href="#">Situational</a></h3>
+      <h6><a href="http://lmt-situational.herokuapp.com/">Go to the tool</a></h6>
+
+      <div class="row">
+        <div class="large-9 columns">
+          <div>
+            <p>Given a postcode, explore:</p>
+            <ul>
+              <li>travel times map</li>
+              <li>top job categories</li>
+              <li>top employers</li>
+              <li>latest jobs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <hr/>
+
+    <article>
+
+      <h3><a href="#">Job roles report</a></h3>
+      <h6><a href="http://lmt-situational.herokuapp.com/sectors/">Go to the tool</a></h6>
+
+      <div class="row">
+        <div class="large-9 columns">
+          <div>
+            <p>Based on a postcode and keywords of your choice, get information about job roles you are looking for, including:</p>
+            <ul>
+              <li>pay bands</li>
+              <li>average working hours</li>
+              <li>qualifications required</li>
+              <li>related search terms</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+    <hr/>
+
+    <article>
+      <h3><a href="#">Send us feedback</a></h3>
+
+        <form id="contact-form" action="/send_email" class="contact-form" method="post" data-success="Message successfully sent!">
+
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" class="field" required autofocus /><br/>
+
+          <label for="email">E-mail</label>
+          <input id="email" type="email" name="email" class="field" required /><br/>
+
+          <label for="subject">Subject</label>
+          <input id="subject" type="text" name="subject" class="field" required /><br/>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required ></textarea><br/>
+
+          <button type="submit">Send</button>
+        </form>
+    </article>
+
+  </div>
+
+  <aside class="large-3 columns">
+
+    <div class="panel">
+      <h5>Labour Market tools</h5>
+      <p>Series of tools to get a better unedrstanding of UC claimants' circumstances
+        in order to target the support to give them to improve their employment prospects.
+      </p>
+    </div>
+
+  </aside>
+
+</div>
+
+<footer class="row">
+  <div class="large-12 columns">
+    <hr/>
+    <div class="row">
+      <div class="large-6 columns">
+        <p>Contact: camille.baldock@digital.cabinet-office.gov.uk</p>
+      </div>
+    </div>
+  </div>
+</footer>
