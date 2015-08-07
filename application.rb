@@ -23,14 +23,14 @@ post '/send_email' do
       :domain               => 'heroku.com'
     })
   if res
-    redirect '/index.html'
+    redirect '/index.html?feedback_success=true'
   else
-    redirect '/error.html'
+    redirect '/error.html?feedback_success=false'
   end
 end
 
 set :public_folder, '_site'
 
 get "/*" do
-  redirect '/index.html'
+  redirect 'index.html'
 end

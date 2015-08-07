@@ -4,7 +4,91 @@
   {% include head.html %}
 
   <body>
-    {{ content }}
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Labour Market tools <small>information page</small></h1>
+        <hr/>
+      </div>
+    </div>
+
+
+    <div class="row">
+
+
+      <div class="large-9 columns" role="content">
+
+        <div id="success" style="visibility:hidden" data-alert class="alert-box success">
+          <b>Thank you for your feedback!</b>
+        </div>
+
+        <div id="error" style="visibility:hidden" data-alert class="alert-box alert">
+          <b>There was an error sending your feedback. Please try again.</b>
+        </div>
+
+        {{ content }}
+
+        <article>
+          <h3><a href="#">Send us feedback</a></h3>
+
+            <form id="contact-form" action="/send_email" class="contact-form" method="post">
+
+              <label for="name">Name</label>
+              <input id="name" type="text" name="name" class="field" required /><br/>
+
+              <label for="email">E-mail</label>
+              <input id="email" type="email" name="email" class="field" required /><br/>
+
+              <label for="subject">Subject</label>
+              <input id="subject" type="text" name="subject" class="field" required /><br/>
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required ></textarea><br/>
+
+              <button type="submit">Send</button>
+            </form>
+        </article>
+
+      </div>
+
+      <aside class="large-3 columns">
+
+        <div class="panel">
+          <h5>Labour Market tools</h5>
+          <p>Series of tools to get a better unedrstanding of UC claimants' circumstances
+            in order to target the support to give them to improve their employment prospects.
+          </p>
+        </div>
+
+      </aside>
+
+    </div>
+
+    <footer class="row">
+      <div class="large-12 columns">
+        <hr/>
+        <div class="row">
+          <div class="large-6 columns">
+            <p>Contact: camille.baldock@digital.cabinet-office.gov.uk</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+      var feedback = getParameterByName('feedback_success');
+      if (feedback == "true") {
+        var success_element = document.querySelector("#success");
+        success_element.style.visibility = "visible";
+      } else if (feedback == "false") {
+        var error_element = document.querySelector("#error");
+        error_element.style.visibility = "visible";
+      }
+    </script>
   </body>
 
 </html>
