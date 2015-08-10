@@ -17,11 +17,11 @@
 
       <div class="large-9 columns" role="content">
 
-        <div id="success" style="visibility:hidden" data-alert class="alert-box success">
+        <div id="success" style="display: none;" data-alert class="panel">
           <b>Thank you for your feedback!</b>
         </div>
 
-        <div id="error" style="visibility:hidden" data-alert class="alert-box alert">
+        <div id="error" style="display: none;" data-alert class="panel">
           <b>There was an error sending your feedback. Please try again.</b>
         </div>
 
@@ -83,10 +83,10 @@
       var feedback = getParameterByName('feedback_success');
       if (feedback == "true") {
         var success_element = document.querySelector("#success");
-        success_element.style.visibility = "visible";
+        success_element.style.display = "block";
       } else if (feedback == "false") {
         var error_element = document.querySelector("#error");
-        error_element.style.visibility = "visible";
+        error_element.style.display = "block";
       }
     </script>
   </body>
