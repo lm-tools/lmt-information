@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rack'
-gem 'rack-jekyll'
+gem 'rack', '>= 1.6.11'
+gem 'rack-jekyll', '>= 0.3.5'
 gem 'jekyll'
-gem 'sinatra'
+gem 'sinatra', '>= 1.4.6'
 gem 'pony'
 gem 'json'
