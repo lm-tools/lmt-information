@@ -38,7 +38,7 @@ GEM
       sass (~> 3.2)
     jekyll-watch (1.2.1)
       listen (~> 2.7)
-    json (1.8.3)
+    json (2.3.0)
     kramdown (1.8.0)
     liquid (2.6.3)
     listen (2.10.1)
@@ -85,11 +85,11 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  json
+  json (>= 2.3.0)
   pony
   rack
   rack-jekyll
   sinatra
 
 BUNDLED WITH
-   1.10.6
+   1.17.3
